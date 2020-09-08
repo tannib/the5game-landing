@@ -1,0 +1,138 @@
+.section-faq {
+    background: linear-gradient(to right, $color-header-1, $color-primary-darker);
+    padding: 10rem;
+    padding-top: 15rem;
+    clip-path: polygon(50% 7%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    margin-top: -15rem;
+    color: $color-white;
+
+    @include respond(laptop) {  
+        clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
+        text-align: center;  
+        padding-bottom: 5rem;
+        padding-top: 10rem;  
+    }
+
+    @include respond(phone-tab) {  
+        clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
+        padding: 5rem;
+        padding-top: 10rem;  
+    }
+
+    @include respond(largePhone) {  
+        clip-path: polygon(50% 1%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
+        padding: 5rem;
+        padding-top: 8rem;  
+    }
+
+    @include respond(smallPhone) {  
+        clip-path: polygon(50% 2%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);     
+    }
+
+    &__heading {
+        width: 60%;
+        margin: 0 auto;
+
+        @include respond(laptop) {  
+            width: 90%;
+        }
+
+        @include respond(pixel2XL) {  
+            width: 100%;
+        }
+
+        // @include respond(phone-tab) {  
+        //     width: 100%;
+        // }
+    }
+}
+
+.row__1 {
+    margin-bottom: 1rem !important;
+}
+
+.row__faq {
+    &--first {
+        @include respond(laptop) {
+            margin-left: -4rem;
+            width: 110%;
+            margin-top: -4rem;
+        }
+
+        @include respond(pixel2XL) {
+            margin-left: 0rem;
+            width: 100%;
+        }
+    }
+
+    &--second {
+        @include respond(laptop) {
+            margin-top: 2rem;
+        }
+
+        @include respond(pixel2XL) {  
+            margin-top: -4rem;
+        }
+    }
+}
+
+.qanda {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .5);
+    background-color: rgba($color-white, .9);
+    border-radius: 3px;
+    padding: 3rem;
+
+    &--of-3 {
+        width: 85%;
+
+        @include respond(laptop) {
+            width: 100%;
+        }
+    }
+
+    @include respond(pixel2XL) {  
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+}
+
+.question {
+    backface-visibility: hidden;
+    display: block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: $color-primary-darker;
+}
+
+.answer {
+    color: $color-primary-dark;
+}
+
+.more__questions {
+    width: 75%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-bottom: 5rem;
+
+    @include respond(pixel2XL) {  
+        width: 90%;
+        margin-top: -6rem;
+        font-size: 1.6rem;
+        // margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+        margin-top: -3rem;
+        // left: 2rem;
+    }
+}
+
+.faq__bold {
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}

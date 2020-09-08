@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__container">
+            <div class="navigation__background">&nbsp;</div>
+        </div>
+
+        <!-- <nav class="navigation__nav">
+            <p class="navigation__list">Benvenuto a The5Game</p>
+        </nav> -->
+
+        <nav class="navigation__nav">
+            <div class="navigation__blurspace">&nbsp;</div>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" id="nav__list--signup">Registrati</a></li>
+                <li class="navigation__item"><a class="navigation__link" id="nav__list--login">Login</a></li>
+                <li class="navigation__item"><a class="navigation__link" id="nav__list--rules">Regolamento</a></li>
+                <li class="navigation__item"><a class="navigation__link" id="nav__list--faq">FAQ</a></li>
+                <li class="navigation__item"><a class="navigation__link" id="nav__list--contacts">Contatti</a></li>
+                </ul>
+        </nav>
+    </div>
+
+    <div class="popup__1">
+        <div class="popup__1__registration">
+            <span class="registration__icon">&nbsp;</span>
+            <form class="registration__form" name="registration__form">
+                <fieldset class="registration__fieldset">
+                    <div class="registration__form__header">
+                        <h1 class="registration__form__header--main" >Registrati</h1>
+                        <h2 class="registration__form__header--sub" >Hai già un account? <a class="registration__form__header--sub__login--bold" id="login__from__signup">Login</a></h2>
+                    </div>
+
+                    <h3 class="registration__social__header">Continua con</h3>
+                    <button class="registration__social registration__social--fb">
+                        <span class="registration__social__icon">
+                            <img src="img/icons/fb.png" alt="">
+                        </span>
+                        <span class="registration__social__text">Facebook</span>
+                    </button>
+
+                    <button class="registration__social registration__social--google">
+                        <span class="registration__social__icon">
+                            <img src="img/icons/google.png" alt="">
+                        </span>
+                        <span class="registration__social__text">Google</span>
+                    </button>
+
+                    <div class="registration__form__or__line__container">
+                        <span class="registration__form__or__line registration__form__or__line--left">&nbsp;</span>
+                        <span class="registration__form__or__line registration__form__or__line--text">Oppure</span>  
+                        <span class="registration__form__or__line registration__form__or__line--right">&nbsp;</span>    
+                    </div>
+                    
+                    <div class="registration__form__group registration__form__inline">
+                        <input type="text" class="registration__form__input" placeholder="Nome" id="name" required>
+                        <label for="name" class="registration__form__label">Nome</label>
+                    </div>
+
+                    <div class="registration__form__group registration__form__inline">
+                        <input type="text" class="registration__form__input" placeholder="Cognome" id="surname" required>
+                        <label for="surname" class="registration__form__label">Cognome</label>
+                    </div>
+                    
+                    <div class="registration__form__group">
+                        <input type="email" class="registration__form__input" placeholder="Mail" id="email" required>
+                        <label for="email" class="registration__form__label">Email</label>
+                    </div>
+
+                    <div class="registration__form__group">
+                        <input type="text" class="registration__form__input" placeholder="Username" id="username" required>
+                        <label for="username" class="registration__form__label">
+                            Username: il nome con cui verrai visualizzato nel gioco</label>
+                    </div>
+
+                    <div class="registration__form__group">
+                        <input type="text" class="registration__form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="registration__form__label">Password</label>
+                    </div>
+
+                    <div class="registration__form__radio-group">
+                        <input type="checkbox" class="registration__form__radio-input" id="terms" name="size">
+                        <label for="terms" class="registration__form__radio-label">
+                            <span class="registration__form__radio-button"></span>
+                            Accetto le <a class="registration__form__radio-button--bold">Condizioni generali di contratto.</a>
+                        </label>
+                    </div>
+
+                    <button class="registration__form__submit">Registrati!</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="popup__1__blankspace">&nbsp;</div>
+    </div>
+
+    <div class="popup__2">
+        <div class="popup__2__login">
+            <span class="login__icon">&nbsp;</span>
+            <form class="login__form" name="login__form">
+                <fieldset class="login__fieldset">
+                    <div class="login__form__header">
+                        <h1 class="login__form__header--main" >Bentornato!</h1>
+                        <h2 class="registration__form__header--sub" >Non hai un account? <a class="registration__form__header--sub__login--bold" id="signup__from__login">Registrati!</a></h2>
+                    </div>
+
+                    <h3 class="login__social__header">Accedi con</h3>
+                    <button class="login__social login__social--fb">
+                        <span class="login__social__icon">
+                            <img src="img/icons/fb.png" alt="">
+                        </span>
+                        <span class="login__social__text">Facebook</span>
+                    </button>
+
+                    <button class="login__social login__social--google">
+                        <span class="login__social__icon">
+                            <img src="img/icons/google.png" alt="">
+                        </span>
+                        <span class="login__social__text">Google</span>
+                    </button>
+
+                    <div class="login__form__or__line__container">
+                        <span class="login__form__or__line login__form__or__line--left">&nbsp;</span>
+                        <span class="login__form__or__line login__form__or__line--text">Oppure</span>  
+                        <span class="login__form__or__line login__form__or__line--right">&nbsp;</span>    
+                    </div>
+
+                    <div class="login__form__group login__form__group--first">
+                        <input type="text" class="login__form__input" placeholder="Username o Mail" id="username--login" required>
+                        <label for="username--login" class="login__form__label">
+                            Username o Mail</label>
+                    </div>
+
+                    <div class="login__form__group login__form__group--last ">
+                        <input type="text" class="login__form__input" placeholder="Password" id="password--login" required>
+                        <label for="password--login" class="login__form__label">Password</label>
+                    </div>
+
+                    <h2 class="login__form__pwd__forgot"><a>Password dimenticata?</a></h2>
+
+                    <button class="login__form__submit">Accedi</button>
+
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="popup__2__blankspace">&nbsp;</div>
+    </div>
+
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo_text.png" alt="logo" class="header__logo">
+        </div> 
+        <div class="header__row row">
+            <div class="col-5-of-12 header__left">
+                <div class="header__box">
+                    <h1 class="heading-primary">
+                        Il primo fanta quotidiano su tutto il mondo dello sport.
+                    </h1>
+                    <h2 class="heading-secondary">
+                        Schiera nella stessa formazione tutti i più forti atleti al Mondo e gioca gratis per vincere premi ogni giorno.
+                    </h2>
+                    <div class="signup__login__row">
+                        <div class="signup__container">
+                            <a class="signup">Registrati!</a>
+                        </div>
+                        <div class="login__container">
+                            <a class="login">Login</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-7-of-12 header__right">
+                <div class="header__container__image">
+
+                    <picture class="header__image">
+                        <source srcset="img/mockup/iphone.png" media="(max-width: 52em">
+                        <!-- <source srcset="img/mockup/tablet--p.png" media="(max-width: 50em"> -->
+                        <img src="img/mockup/desktop.png" alt="" class="header__image--desktop">
+                    </picture>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-about">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="about__left">
+                    <h3 class="heading-tertiary">
+                        <span class="heading-tertiary--sub">Cos'è</span>
+                        <span class="heading-tertiary--main">The5Game?</span>
+                        <span class="heading-tertiary--line">&nbsp;</span>
+                    </h3>
+
+                    <div class="athlete__slideshow-container">
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--1.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--2.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--3.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--4.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--5.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--6.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--7.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--8.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--9.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--10.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--11.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--12.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--13.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--14.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--15.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--16.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--17.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--18.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--19.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--20.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--21.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--22.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--23.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--24.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--25.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--26.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--27.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--28.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--29.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--30.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--31.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--32.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--33.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--34.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--35.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--36.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--37.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--38.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--39.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--40.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--41.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--42.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--43.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--44.png" alt="" class="athlete">
+                        </div>
+                        <div class="mySlides">
+                            <img src="img/player/single_athlete--45.png" alt="" class="athlete">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="about__right">
+                    <p class="about__right__text">
+                        <span class="about__right__text--main">The5Game è un fantasy game sportivo online. </br></span>
+                        <span class="about__right__text--sub">Crea ogni giorno una selezione virtuale di cinque atleti i cui risultati dipenderanno da eventi sportivi reali.</span>
+
+                        <span class="about__right__text--line">&nbsp;</span>
+                        <span class="about__right__text--sub">Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-how">
+        <div class="row">
+            <h3 class="section-how__heading heading-fourth">
+                <span class="heading-fourth--main">Come si gioca</span>
+                <span class="heading-fourth--sub">a The5Game</span>
+                <span class="heading-fourth--qmark">?</span>
+            </h3>
+        </div>
+        <div class="row section-how__container">
+            <div class="section-how__chevron section-how__chevron--1">
+                <img src="img/icon_registration.png" class="chevron__icon chevron__icon--1 "></img>
+                <h4 class="chevron__header--sub chevron__header--sub--1">Registrazione</h5>
+                <p class="chevron__text chevron__text--1">
+                    <span class="chevron__text--bold">Crea un account</span> inserendo solamente nome, cognome, user, mail e password.
+                </p>
+            </div>
+            <div class="section-how__chevron section-how__chevron--2">
+                <img src="img/icon_lineup.png" class="chevron__icon chevron__icon--2"></img>
+                <h4 class="chevron__header--sub chevron__header--sub--2">Formazione</h5>
+                <p class="chevron__text chevron__text--2">
+                    <span class="chevron__text--bold">Scegli i tuoi cinque atleti preferiti</span> tra quelli a disposizione e schiera il tuo quintetto.
+                </p>
+            </div>
+            <div class="section-how__chevron section-how__chevron--3">
+                <img src="img/icon_save.png" class="chevron__icon chevron__icon--3"></img>
+                <h4 class="chevron__header--sub chevron__header--sub--3">Salvataggio</h5>
+                <p class="chevron__text chevron__text--3">
+                    In base alle tue scelte il computer genererà una formazione  da sfidare. </br>
+                    <span class="chevron__text--bold">Salva le formazioni per scendere in campo!</span>
+                </p>
+            </div>
+            <div class="section-how__chevron section-how__chevron--4">
+                <img src="img/icon_match.png" class="chevron__icon chevron__icon--4"></img>
+                <h4 class="chevron__header--sub chevron__header--sub--4">Partita</h4>
+                <p class="chevron__text chevron__text--4">
+                    Goditi gli eventi dei tuoi atleti e raccogli i punti delle loro prestazioni per <span class="chevron__text--bold">vincere premi ogni giorno.</span>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="row section-how__faq">
+            <p class="section-how__faq--text">
+                Vai <a>alla nostra sezione <span class="section-how__faq__text--bold">FAQ</span></a> per ulteriori dubbi.
+            </p>
+        </div> -->
+    </section>
+
+    <section class="section-sports">
+        <div class="row">
+            <h3 class="section-how__heading heading-fifth">
+                <span class="heading-fifth--main">Gli sport</span>
+                <span class="heading-fifth--sub">in The5Game</span>
+            </h3>
+        </div>
+        
+        <div class="row row__icon__sport">
+                <div class="col-1-of-6 col__sport col__sport--calcio">
+                    <img class="icon__sport icon__sport--calcio" id="icon__calcio" src="img/icons/calcio.png" alt="">
+                    <ul class="event__list event__list--calcio">
+                        <li class="single__event">Serie A & Liga</li>
+                        <li class="single__event">Premier & Bundesliga</li>
+                        <li class="single__event">Eredivise & Ligue 1</li>
+                        <li class="single__event">Champions & Europa League</li>
+                        <li class="single__event">Europei & Mondiali</li>
+                        <li class="single__event">Amichevoli & Qualificazioni</li>
+                        <li class="single__event">Copa Libertadores</li>
+                        <li class="single__event">Coppe & Supercoppe</li>
+                    </ul>
+                </div>
+                <div class="col-1-of-6 col__sport col__sport--basket">
+                    <img class="icon__sport icon__sport--basket" id="icon__basket" src="img/icons/basket.png" alt="">
+                    <ul class="event__list event__list--basket">
+                        <li class="single__event">NBA Regular Season</li>
+                        <li class="single__event">NBA Playoff</li>
+                        <li class="single__event">NBA Finals</li>
+                    </ul>
+                </div>
+                <div class="col-1-of-6 col__sport col__sport--football">
+                    <img class="icon__sport icon__sport--football" id="icon__nfl" src="img/icons/nfl.png" alt="">
+                    <ul class="event__list event__list--football">
+                        <li class="single__event">NFL Regular Season</li>
+                        <li class="single__event">NFL Playoff</li>
+                        <li class="single__event">Super Bowl</li>
+                    </ul>
+                </div>
+                <div class="col-1-of-6 col__sport col__sport--tennis">
+                    <img class="icon__sport icon__sport--tennis" id="icon__tennis" src="img/icons/tennis.png" alt="">
+                    <ul class="event__list event__list--tennis">
+                        <li class="single__event">Grandi Slam ATP</li>
+                        <li class="single__event">Master 1000 ATP</li>
+                        <li class="single__event">ATP 500 & 250</li>
+                        <li class="single__event">ATP Finals</li>
+                        <li class="single__event">Coppa Davis</li>
+                        <li class="single__event">Next Gen</li>
+                    </ul>
+                </div>
+                <div class="col-1-of-6 col__sport col__sport--motori">
+                    <img class="icon__sport icon__sport--motori" id="icon__motori" src="img/icons/motori.png" alt="">
+                    <ul class="event__list event__list--motori">
+                        <li class="single__event">Formula 1</li>
+                        <li class="single__event">MotoGP</li>
+                    </ul>
+                </div>
+                <div class="col-1-of-6 col__sport col__sport--baseball">
+                    <img class="icon__sport icon__sport--baseball" id="icon__baseball" src="img/icons/calcio.png" alt="">
+                    <ul class="event__list event__list--baseball">
+                        <li class="single__event">MLB Regular Season</li>
+                        <li class="single__event">MLB PLayoff</li>
+                        <li class="single__event">World Series</li>
+                    </ul>
+                </div>           
+        </div>
+    </section>
+    <section class="section-faq">
+        <div class="row">
+            <h3 class="section-faq__heading heading-sixth">
+                <span class="heading-sixth--sub">The5Most</span>
+                <span class="heading-sixth--main lg-view">Frequently Asked Question</span>
+                <span class="heading-sixth--main sm-view">FAQ</span>
+            </h3>
+        </div>
+        <div class="row u-margin-bottom-medium row__faq--first">
+            <div class="col-1-of-3">
+                <div class="qanda qanda--of-3">
+                    <h3 class="question">È gratuito giocare a The5Game?</h3>
+                    <p class="answer">
+                        Sì, The5Game è gratis e lo sarà sempre. </br>
+                        Per migliorare l'esperienza di gioco sono previsti dei pacchetti premium, ma le funzionalità e le opportunità di vittoria sono le stesse anche in modalità gratuita.
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="qanda qanda--of-3">
+                    <h3 class="question">Come si gioca a The5Game?</h3>
+                    <p class="answer">
+                        Crea ogni giorno una formazione composta da cinque atleti scegliendo tra tutti quelli disponibili. </br>
+                        Gli atleti a disposizione variano di giorno in giorno perchè è possibile schierare solamente quelli che scenderanno in campo o in pista quel giorno.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="qanda qanda--of-3">
+                    <h3 class="question">Come posso comporre la mia formazione?</h3>
+                    <p class="answer">
+                        Nella scelta dei tuoi cinque atleti hai l'assoluta libertà di scelta, nel rispetto del budget predefinito. </br>
+                        Puoi mischiare cinque sport differenti come puoi scegliere semplicemente cinque atleti della tua squadra preferita. </br>
+                    </p>         
+                </div>
+            </div>
+        </div>
+
+        <div class="row u-margin-bottom-big row__faq--second">
+            <div class="col-1-of-2 col-1-of-2--faq">
+                <div class="qanda  qanda--of-2">
+                    <h3 class="question">Come si vincono i premi?</h3>
+                    <p class="answer">
+                        In The5Game puoi vincere ogni giorno. </br>
+                        Sono infatti presenti due differenti competizioni: una giornaliera e una settimanale. </br>
+                        L'utente che con i risultati dei suoi quintetti sarà primo in classifica al termine di ogni competizione si porterà a caso l'intero premio.
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-2 col-1-of-2--faq">
+                <div class="qanda qanda--of-2">
+                    <h3 class="question">In cosa consistono i premi?</h3>
+                    <p class="answer">
+                        La nostra volontà è dare ai vincitori un premio che fosse il più simile possibile a soldi veri. </br>
+                        La legislazione italiana putroppo ci vieta di inviare soldi per cui l'alternativa legale più vicina al denaro sono buoni Amazon, che sono accumulabili e con cui è possibile comprare quello che si vuole.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="more__questions">
+                <p>Per tutti i tuoi ulteriori dubbi su cos'è The5Game, chi può partecipare, come si gioca e quando si vince, ti reindirizziamo <a class="faq__bold">alla sezione FAQ</a> dove troverai tutte le risposte che cerchi oppure alla pagina <a class="faq__bold">REGOLAMENTO</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+    
+    <script src="js/displayJersey.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

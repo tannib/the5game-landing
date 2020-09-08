@@ -1,0 +1,52 @@
+.athlete__slideshow-container {
+    position: relative;
+}
+
+.mySlides {
+    position: absolute;
+    transition: all 1s;
+
+    @include respond(pixel2XL) {
+        transform: scale(0.8);
+        left: -3rem;
+        top: -4rem
+    }
+
+    @include respond(phone-tab) {
+        transform: scale(0.7);
+        top: -4rem;
+        left: 14.3rem;
+    }
+
+    @include respond(galaxyS5) {
+        left: 12rem;
+    }
+
+    @include respond(largePhone) {
+        left: 4rem;
+    }
+
+    @include respond(phone) {
+        transform: scale(0.45);
+        top: -17rem;
+        left: 7.5rem;
+    }
+
+    @include respond(mediumPhone) {
+        left: 2rem;
+    }
+
+    @include respond(smallPhone) {
+        left: -3.5rem;
+    }
+
+    
+}
+
+.athlete {
+    padding-left: 2.5rem;
+    filter: drop-shadow(0 1.5rem 5rem rgba($color-black, .25));
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}

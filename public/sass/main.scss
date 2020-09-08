@@ -1,0 +1,26 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "components/athlete__carousel";
+@import "components/registration_popup";
+@import "components/login_popup";
+
+@import "sections/about";
+@import "sections/how";
+@import "sections/sports";
+@import "sections/faq";
+
+
+
+

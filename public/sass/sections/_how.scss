@@ -1,0 +1,320 @@
+.section-how {
+    background: linear-gradient(to right, $color-header-1, $color-primary-darker);
+    padding: 20rem 10rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    margin-top: -20rem;
+    color: $color-white;
+
+    @include respond(laptop) {
+        padding: 15rem 10rem;
+    }
+
+    @include respond(pixel2XL) {
+        padding: 12rem 10rem;
+        clip-path: polygon(50% 5%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+    }
+
+    @include respond(phone-tab) {  
+        clip-path: polygon(50% 2%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+        margin-top: -20%;
+        height: 175rem;
+        padding: 12rem 4rem;
+    }
+
+    @include respond(largePhone) {
+        clip-path: polygon(50% 2%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
+        padding: 12rem 5rem;
+        height: 170rem;
+    }
+
+    @include respond(smallPhone) {  
+        padding-top: 17rem;
+    }
+
+    &__container {
+        height: 40rem;
+        width: 100%;
+        position: relative;
+        filter: drop-shadow(0 1.5rem 5rem rgba($color-black, 1));
+
+        @include respond(laptop) {
+            width: 115%;
+            margin-left: -7rem;
+            margin-top: -2rem;
+        }
+
+        @include respond(pixel2XL) {
+            margin-left: -5rem;
+        }
+
+        @include respond(phone-tab) {
+            margin-left: -4.5rem;
+        }
+
+        @include respond(largePhone) {
+            margin-left: -3rem;
+        }
+
+        @include respond(phone) {
+            margin-left: -6rem;
+        }
+
+        @include respond(smallPhone) {
+            margin-left: -4rem;
+        }
+    }
+
+    &__chevron {
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        transition: all .2s;
+
+        @include respond(phone-tab) {  
+            display: block;
+            position: relative;
+            margin-bottom: -4rem;
+        }
+
+        &--1 {
+            left: 0;
+            background-color: rgba($color-background, .9);
+            clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+            width: 25.5%;
+            border-radius: 2rem 0 0 2rem;
+
+            @include respond(laptop) {
+                width: 24.5%;
+            }
+
+            @include respond(phone-tab) {  
+            display: block;
+            position: relative;
+            height: 35rem;
+            width: 80%;
+            margin: 0 auto;
+            clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0% 85%);
+            border-radius: 2rem;
+            margin-top: -2rem;
+            }
+        }
+
+        &--2 {
+            left: 24%;
+            background-color: rgba($color-background, .93);
+            clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+            width: 26.5%;
+
+            @include respond(laptop) {
+                width: 27.5%;
+                left: 23%;
+            }
+
+            @include respond(phone-tab) { 
+                clip-path: polygon(50% 13%, 100% 0, 100% 75%, 50% 88%, 0% 75%, 0 0);
+                left: 0; 
+                width: 80%;
+                margin: 0 auto;
+                margin-top: -4rem;
+                position: relative;
+                }
+        }
+
+        &--3 {
+            left: 49%;
+            background-color: rgba($color-background, .96);
+            clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+            width: 26.5%;
+
+            @include respond(laptop) {
+                width: 27.5%;
+                left: 49%;
+            }
+
+            @include respond(phone-tab) { 
+                clip-path: polygon(50% 13%, 100% 0, 100% 75%, 50% 88%, 0% 75%, 0 0);
+                left: 0;
+                width: 80%;
+                margin: 0 auto;
+                margin-top: -8rem;
+                position: relative;
+                }
+        }
+
+        &--4 {
+            left: 74%;
+            background-color: rgba($color-background, 1);
+            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+            width: 26%;
+            border-radius: 0 2rem 2rem 0;
+
+            @include respond(laptop) {
+                width: 25%;
+                left: 75%;
+            }
+            
+
+            @include respond(phone-tab) {  
+                clip-path: polygon(50% 13%, 100% 0, 100% 75%, 100% 100%, 0% 100%, 0 0);
+                border-radius: 0 0 3rem 3rem;
+                left: 0;
+                width: 80%;
+                margin: 0 auto;
+                margin-top: -8rem;
+                position: relative;
+                height: 35rem;
+                }
+        }
+    }
+}
+
+.chevron {
+
+    &__header {
+        padding: 1rem 3rem;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #dcc515;
+        margin-bottom: -2rem;
+
+        &--sub {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            color: #dcc515;
+            margin-bottom: 1.5rem;
+
+            @include respond(laptop) {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            @include respond(pixel2XL) {
+                font-size: 2rem;
+                // margin-bottom: 1rem;
+            }
+
+            @include respond(phone-tab) {  
+                position: absolute;
+                top: 18%;
+                left: 54%;
+                transform: translateX(-50%);           
+            }
+
+            @include respond(smallPhone) {  
+                left: 56%;         
+            }
+
+            &--2,
+            &--3
+            {
+                padding-left: 1rem;
+
+                @include respond(phone-tab) {  
+                    position: absolute;
+                    top: 20%;  
+                    left: 53%;       
+                }
+            }
+
+            &--4 {
+                // padding-left: 2rem;
+
+                @include respond(phone-tab) {  
+                    position: absolute;
+                    top: 18%;
+                    left: 47%;         
+                }
+            }
+
+        }
+    }
+
+    &__text {
+        width: 65%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-primary-dark;
+        text-align: center;
+
+        @include respond(laptop) {
+            font-size: 1.6rem;
+        }
+
+        @include respond(pixel2XL) {
+            font-size: 1.5rem;
+        }
+
+        @include respond(phone-tab) {  
+            position: absolute;
+            top: 32%; 
+            right: 18%;
+            text-align: left;
+            width: 45%;        
+        }
+
+        @include respond(mediumPhone) {  
+            top: 32%; 
+            right: 20%;      
+        }
+
+        @include respond(smallPhone) {  
+            position: absolute;
+            top: 32%; 
+            right: 13%;
+            text-align: left;
+            width: 55%;        
+        }
+
+        &--bold {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: $color-primary-darker;
+
+            @include respond(laptop) {
+                font-size: 1.7rem;
+            }
+        }
+
+        &--2,
+        &--3
+        {
+            padding-left: 1rem;
+        }
+
+        &--4 {
+            // padding-left: 2rem;
+            top: 32%;
+        }
+    }
+
+    &__icon {
+        width: 25%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        &--4 {
+            @include respond(laptop) {
+                // margin-left: 10rem;
+            }
+        }
+
+        @include respond(laptop) {
+            width: 23%;
+        }
+
+        @include respond(phone-tab) {  
+            width: 20%;
+            margin: 0;
+            position: absolute;
+            top: 45%;
+            left: 7%;
+            transform: translateY(-50%);           
+        }
+    }
+    
+}
