@@ -50,10 +50,22 @@
     left: 6rem;
     width: 25%;
 
-    @include respond(phone) {
+    @include respond(phone-tab) {
+      transform: translateX(-35%);
       left: 50%;
+      top: 7rem;
+    }
+
+    @include respond(largePhone) {
+      left: 50%;
+      top: 6rem;
       transform: translateX(-35%);
     }
+
+    @include respond(phone) {
+      transform: translateX(-30%);
+    }
+
     @include respond(smallPhone) {
       transform: translateX(-40%);
     }
@@ -67,11 +79,11 @@
     }
 
     @include respond(phone-tab) {
-      width: 60%;
+      width: 70%;
     }
 
     @include respond(phone) {
-      width: 70%;
+      width: 60%;
     }
     @include respond(smallPhone) {
       width: 80%;

@@ -384,10 +384,19 @@ body {
     top: 4rem;
     left: 6rem;
     width: 25%; }
-    @media (max-width: 26.6em) {
+    @media (max-width: 43.75em) {
+      .header__logo-box {
+        transform: translateX(-35%);
+        left: 50%;
+        top: 7rem; } }
+    @media (max-width: 31.25em) {
       .header__logo-box {
         left: 50%;
+        top: 6rem;
         transform: translateX(-35%); } }
+    @media (max-width: 26.6em) {
+      .header__logo-box {
+        transform: translateX(-30%); } }
     @media (max-width: 20em) {
       .header__logo-box {
         transform: translateX(-40%); } }
@@ -398,10 +407,10 @@ body {
         width: 50%; } }
     @media (max-width: 43.75em) {
       .header__logo {
-        width: 60%; } }
+        width: 70%; } }
     @media (max-width: 26.6em) {
       .header__logo {
-        width: 70%; } }
+        width: 60%; } }
     @media (max-width: 20em) {
       .header__logo {
         width: 80%; } }
