@@ -1,4 +1,8 @@
 .navigation {
+  @include respond(tablet) {
+    display: none;
+  }
+
   &__checkbox {
     display: none;
   }

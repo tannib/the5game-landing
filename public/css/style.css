@@ -518,6 +518,10 @@ body {
     background: #229870;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8); }
 
+@media (max-width: 48em) {
+  .navigation {
+    display: none; } }
+
 .navigation__checkbox {
   display: none; }
 
