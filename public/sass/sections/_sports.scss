@@ -1,463 +1,439 @@
 .section-sports {
-    background-color: $color-background;
-    padding: 20rem 0;
+  background-color: $color-background;
+  padding: 20rem 0;
+  margin-top: -15rem;
+
+  @include respond(laptop) {
+    height: 130rem;
+  }
+
+  @include respond(phone-tab) {
+    padding-bottom: 15rem;
+    margin-top: -10rem;
+    height: 160rem;
+  }
+
+  @include respond(largePhone) {
+    height: 155rem;
+  }
+
+  @include respond(phone) {
+    height: 165rem;
+  }
+
+  @include respond(smallPhone) {
+    padding: 25rem 0 15rem 0;
     margin-top: -15rem;
-
-    @include respond(laptop) {  
-        height: 130rem;
-    }
-
-    @include respond(phone-tab) {  
-        padding-bottom: 15rem;  
-        margin-top: -10rem;
-        height: 160rem;   
-    }
-
-    @include respond(largePhone) {  
-        height: 155rem;
-    }
-
-    @include respond(phone) {
-        height: 165rem;
-    }
-
-    @include respond(smallPhone) {  
-        padding: 25rem 0 15rem 0;     
-        margin-top: -15rem;
-    }
-    // clip-path: polygon(50% 100%, 100% 80vh, 100% 0, 0 0, 0 90vh);
+  }
+  // clip-path: polygon(50% 100%, 100% 80vh, 100% 0, 0 0, 0 90vh);
 }
 
 .row__icon__sport,
 .row__container__icon__sport {
-    max-width: 120rem;
-    position: relative;
+  max-width: 120rem;
+  position: relative;
 
-    @include respond(laptop) {  
-        padding: 0 4rem;    
-    }
-
+  @include respond(laptop) {
+    padding: 0 4rem;
+  }
 }
 
 .col__sport {
+  @include respond(laptop) {
+    position: absolute;
+  }
 
-    @include respond(laptop) {  
-        position: absolute;
-    }  
-
-    &--calcio {
-        @include respond(laptop) {
-            top: 0;
-            left: 0;
-        }
-
-        @include respond(phone-tab) {  
-            top: 0;
-            left: 2rem;
-        }        
+  &--calcio {
+    @include respond(laptop) {
+      top: 0;
+      left: 0;
     }
 
-    &--basket {
-        @include respond(laptop) {
-            top: 50rem;
-            left: 0;
-        }
+    @include respond(phone-tab) {
+      top: 0;
+      left: 2rem;
+    }
+  }
 
-        @include respond(pixel2XL) {
-            top: 53rem;
-        }
-
-        @include respond(phone-tab) {  
-            top: 50rem;
-            left: 2rem;
-        }
-
-        @include respond(phone) {
-            top: 53rem;
-            left: 2rem;
-        }
+  &--basket {
+    @include respond(laptop) {
+      top: 50rem;
+      left: 0;
     }
 
-    &--football {
-        @include respond(laptop) {
-            top: 0;
-            left: 66%;
-        }
-
-        @include respond(phone-tab) {  
-            top: 50rem;
-            left: 50%;
-        }
-
-        @include respond(phone) {
-            top: 53rem;
-            // left: 2rem;
-        }
+    @include respond(pixel2XL) {
+      top: 53rem;
     }
 
-    &--tennis {
-        @include respond(laptop) {
-            top: 0;
-            left: 33%;
-        }
-
-        @include respond(phone-tab) {  
-            top: 0;
-            left: 50%;
-        }
+    @include respond(phone-tab) {
+      top: 50rem;
+      left: 2rem;
     }
 
-    &--motori {
-        @include respond(laptop) {
-            top: 50rem;
-            left: 33%;
-        }
+    @include respond(phone) {
+      top: 53rem;
+      left: 2rem;
+    }
+  }
 
-        @include respond(pixel2XL) {
-            top: 53rem;
-        }
-
-        @include respond(phone-tab) {  
-            top: 78rem;
-            left: 2rem;
-        }
-
-        @include respond(phone) {
-            top: 83rem;
-            // left: 2rem;
-        }
+  &--football {
+    @include respond(laptop) {
+      top: 0;
+      left: 66%;
     }
 
-    &--baseball {
-        @include respond(laptop) {
-            top: 50rem;
-            left: 66%;
-        }
+    @include respond(phone-tab) {
+      top: 50rem;
+      left: 50%;
+    }
 
-        @include respond(pixel2XL) {
-            top: 53rem;
-        }
+    @include respond(phone) {
+      top: 53rem;
+      // left: 2rem;
+    }
+  }
 
-        @include respond(phone-tab) {  
-            top: 78rem;
-            left: 50%;
-        }
+  &--tennis {
+    @include respond(laptop) {
+      top: 0;
+      left: 33%;
+    }
 
-        @include respond(phone) {
-            top: 83rem;
-            // left: 2rem;
-        }
-    } 
+    @include respond(phone-tab) {
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  &--motori {
+    @include respond(laptop) {
+      top: 50rem;
+      left: 33%;
+    }
+
+    @include respond(pixel2XL) {
+      top: 53rem;
+    }
+
+    @include respond(phone-tab) {
+      top: 78rem;
+      left: 2rem;
+    }
+
+    @include respond(phone) {
+      top: 83rem;
+      // left: 2rem;
+    }
+  }
+
+  &--baseball {
+    @include respond(laptop) {
+      top: 50rem;
+      left: 66%;
+    }
+
+    @include respond(pixel2XL) {
+      top: 53rem;
+    }
+
+    @include respond(phone-tab) {
+      top: 78rem;
+      left: 50%;
+    }
+
+    @include respond(phone) {
+      top: 83rem;
+      // left: 2rem;
+    }
+  }
 }
 
 .icon {
-
-    &__sport {
-        // background: radial-gradient($color-secondary-light, $color-secondary-dark 75%);
-        padding: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        border-radius: 2rem;
-        width: 70%;
-        display: block;
-        margin: 0 auto;
-        margin-top: -2rem;
-        box-shadow: 0 1rem 3rem rgba($color-black, .3);
-
-        @include respond(laptop) {  
-            width: 30%;     
-        }
-
-        @include respond(phone-tab) {  
-            width: 25%;     
-        }
-
-        &--calcio,
-        &--football {
-            background: radial-gradient($color-football-light, $color-football-dark);
-        }
-
-        &--basket {
-            background: radial-gradient($color-basket-light, $color-basket-dark);
-        }
-
-        &--tennis {
-            background: radial-gradient($color-tennis-light, $color-tennis-dark);
-        }
-
-        &--motori {
-            background: radial-gradient($color-motor-light 60%, $color-motor-dark);
-    
-        }
-
-        &--baseball {
-            background: radial-gradient($color-baseball-light 50%, $color-baseball-dark);
-        }
-    }
-
-}
-
-ul {
-    list-style: none;
+  &__sport {
+    // background: radial-gradient($color-secondary-light, $color-secondary-dark 75%);
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    width: 70%;
+    display: block;
     margin: 0 auto;
-    padding-top: 2rem;
-    text-transform: uppercase;
-    // background-color: pink;
+    margin-top: -2rem;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
 
-
-    li {
-        text-align: center;
-        font-size: 1.4rem;
-        padding: 1rem 0;
+    @include respond(laptop) {
+      width: 30%;
     }
-}
 
-.event__list {
+    @include respond(phone-tab) {
+      width: 25%;
+    }
 
     &--calcio,
     &--football {
-
-        color: $color-football;
-
-        @supports (-webkit-text-fill-color: transparent) and (-webkit-background-clip: text) {
-            background: linear-gradient(to top, $color-football-light, $color-football-dark);
-            -webkit-background-clip: text;
-            // background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        width: 130%;
-        margin-left: -2.5rem;
-        
-        li:not(:last-child) {
-            border-bottom: 1px solid $color-football;
-        }
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;     
-        }
-
-
-        @include respond(phone-tab) {
-            width: 80%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(largePhone) {
-            width: 95%;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
-
-        @include respond(smallPhone) {
-            width: 70%;
-        }
+      background: radial-gradient($color-football-light, $color-football-dark);
     }
 
     &--basket {
-        background: linear-gradient(to top, $color-basket-light, $color-basket-dark);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 100%;
-        margin-left: .5rem;
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;     
-        }
-
-        @include respond(phone-tab) {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
-        
-        li:not(:last-child) {
-            border-bottom: 1px solid $color-basket;
-        }
-
-    }
-
-    &--football {
-        width: 100%;
-        margin-left: 0rem;
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;      
-        }
-
-        @include respond(phone-tab) {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
+      background: radial-gradient($color-basket-light, $color-basket-dark);
     }
 
     &--tennis {
-        background: linear-gradient(to top, $color-tennis-light, $color-tennis-dark);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 100%;
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;     
-        }
-
-        @include respond(phone-tab) {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
-        
-        li:not(:last-child) {
-            border-bottom: 1px solid $color-tennis;
-        }
-
+      background: radial-gradient($color-tennis-light, $color-tennis-dark);
     }
 
     &--motori {
-        background: linear-gradient(to top, $color-motor-light, $color-motor-dark);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 100%;
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;     
-        }
-
-        @include respond(phone-tab) {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
-        
-        li:not(:last-child) {
-            border-bottom: 1px solid $color-motor;
-        }
-
+      background: radial-gradient($color-motor-light 60%, $color-motor-dark);
     }
 
     &--baseball {
-        background: linear-gradient(to top, $color-baseball-light, $color-baseball-dark);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 100%;
-
-        @include respond(laptop) {  
-            width: 75%;
-            margin: 0 auto;     
-        }
-
-        @include respond(phone-tab) {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-
-        @include respond(phone) {
-            width: 60%;
-        }
-        
-        li:not(:last-child) {
-            border-bottom: 1px solid $color-baseball;
-        }
-
+      background: radial-gradient(
+        $color-baseball-light 50%,
+        $color-baseball-dark
+      );
     }
+  }
 }
 
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-transform: uppercase;
+  // background-color: pink;
 
+  li {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+}
 
+.event__list {
+  &--calcio,
+  &--football {
+    color: $color-football;
 
+    @supports (-webkit-text-fill-color: transparent) and
+      (-webkit-background-clip: text) {
+      background: linear-gradient(
+        to top,
+        $color-football-light,
+        $color-football-dark
+      );
+      -webkit-background-clip: text;
+      // background-clip: text;
+      -webkit-text-fill-color: $color-football;
+    }
 
+    width: 130%;
+    margin-left: -2.5rem;
 
+    li:not(:last-child) {
+      border-bottom: 1px solid $color-football;
+    }
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
 
+    @include respond(phone-tab) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
 
+    @include respond(largePhone) {
+      width: 95%;
+    }
 
+    @include respond(phone) {
+      width: 60%;
+    }
 
+    @include respond(smallPhone) {
+      width: 70%;
+    }
+  }
 
+  &--basket {
+    background: linear-gradient(
+      to top,
+      $color-basket-light,
+      $color-basket-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: $color-basket;
+    width: 100%;
+    margin-left: 0.5rem;
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
 
+    @include respond(phone-tab) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
 
+    @include respond(phone) {
+      width: 60%;
+    }
 
+    li:not(:last-child) {
+      border-bottom: 1px solid $color-basket;
+    }
+  }
 
+  &--football {
+    width: 100%;
+    margin-left: 0rem;
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
 
+    @include respond(phone-tab) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
 
+    @include respond(phone) {
+      width: 60%;
+    }
+  }
 
+  &--tennis {
+    background: linear-gradient(
+      to top,
+      $color-tennis-light,
+      $color-tennis-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: $color-tennis;
+    width: 100%;
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
 
+    @include respond(phone-tab) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
 
+    @include respond(phone) {
+      width: 60%;
+    }
 
+    li:not(:last-child) {
+      border-bottom: 1px solid $color-tennis;
+    }
+  }
 
+  &--motori {
+    background: linear-gradient(to top, $color-motor-light, $color-motor-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: $color-motor;
+    width: 100%;
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
 
+    @include respond(phone-tab) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
 
+    @include respond(phone) {
+      width: 60%;
+    }
 
+    li:not(:last-child) {
+      border-bottom: 1px solid $color-motor;
+    }
+  }
 
+  &--baseball {
+    background: linear-gradient(
+      to top,
+      $color-baseball-light,
+      $color-baseball-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: $color-baseball;
+    width: 100%;
 
+    @include respond(laptop) {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    @include respond(phone-tab) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      width: 60%;
+    }
+
+    li:not(:last-child) {
+      border-bottom: 1px solid $color-baseball;
+    }
+  }
+}
 
 #container__league {
-    background-color: rgba($color-black, .8);
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
+  background-color: rgba($color-black, 0.8);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 
-    @supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-    }
+  @supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
 }
 
 .container__icon {
-
-    &__sport {
-        background: radial-gradient($color-secondary-light, $color-secondary-dark 75%);
-        padding: 1rem;
-        border-radius: 2rem;
-        width: 70%;
-        margin-left: 3rem;
-        margin-top: 33.3rem;
-        opacity: 0;
-        visibility: hidden;
-        // height: 5.5rem;
-    }
-
+  &__sport {
+    background: radial-gradient(
+      $color-secondary-light,
+      $color-secondary-dark 75%
+    );
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 70%;
+    margin-left: 3rem;
+    margin-top: 33.3rem;
+    opacity: 0;
+    visibility: hidden;
+    // height: 5.5rem;
+  }
 }
 
 // .slider {
@@ -465,7 +441,7 @@ ul {
 //     height: 70vh;
 //     display: flex;
 //     overflow-x: auto;
-//     scroll-snap-type: x mandatory; 
+//     scroll-snap-type: x mandatory;
 //     scroll-behavior: smooth;
 //     position: relative;
 //     transition: all 1s;
@@ -665,8 +641,3 @@ ul {
 //         left: 0;
 //     }
 // }
-
-
-
-
-
