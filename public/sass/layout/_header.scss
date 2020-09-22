@@ -4,8 +4,6 @@
     rgba($color-header-1, 0.95) 0%,
     rgba($color-primary-darker, 0.95) 80%
   );
-  // ,url(/img/backdrop_header--2.png);
-  // height: 100vh;
   height: 73.8rem;
   color: white;
   padding-top: 11rem;
@@ -173,7 +171,6 @@
   &__image {
     width: 90%;
     padding-top: 5rem;
-    // transition: all .3s ease-in-out;
     display: block;
     margin: 0 auto;
 
@@ -205,6 +202,20 @@
 
     &--desktop {
       width: 100%;
+      display: block;
+
+      @include respond(pixel2XL) {
+        display: none;
+      }
+    }
+
+    &--phone {
+      display: none;
+
+      @include respond(pixel2XL) {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }

@@ -486,7 +486,17 @@ body {
       .header__image {
         width: 40%; } }
     .header__image--desktop {
-      width: 100%; }
+      width: 100%;
+      display: block; }
+      @media (max-width: 52em) {
+        .header__image--desktop {
+          display: none; } }
+    .header__image--phone {
+      display: none; }
+      @media (max-width: 52em) {
+        .header__image--phone {
+          display: block;
+          width: 100%; } }
 
 .signup__container,
 .login__container {
