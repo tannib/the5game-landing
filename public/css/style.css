@@ -2074,7 +2074,7 @@ ul {
   @media (max-width: 20em) {
     .section-faq {
       clip-path: polygon(50% 1%, 100% 0, 100% 99%, 50% 100%, 0 99%, 0 0);
-      height: 2600px;
+      height: 2700px;
       padding-left: 25px;
       padding-right: 25px; } }
   .section-faq__heading {
