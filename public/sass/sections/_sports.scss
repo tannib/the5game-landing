@@ -1,40 +1,39 @@
 .section-sports {
   background-color: $color-background;
-  padding: 20rem 0;
-  margin-top: -15rem;
+  padding: 200px 0;
+  margin-top: -150px;
 
   @include respond(laptop) {
-    height: 130rem;
+    height: 1300px;
   }
 
   @include respond(phone-tab) {
-    padding-bottom: 15rem;
-    margin-top: -10rem;
-    height: 160rem;
+    padding-bottom: 150px;
+    margin-top: -100px;
+    height: 1600px;
   }
 
   @include respond(largePhone) {
-    height: 155rem;
+    height: 1550px;
   }
 
   @include respond(phone) {
-    height: 165rem;
+    // height: 1550px;
   }
 
   @include respond(smallPhone) {
-    padding: 25rem 0 15rem 0;
-    margin-top: -15rem;
+    // padding: 250px 0 150px 0;
+    margin-top: -150px;
   }
-  // clip-path: polygon(50% 100%, 100% 80vh, 100% 0, 0 0, 0 90vh);
 }
 
 .row__icon__sport,
 .row__container__icon__sport {
-  max-width: 120rem;
+  max-width: 1200px;
   position: relative;
 
   @include respond(laptop) {
-    padding: 0 4rem;
+    padding: 0 40px;
   }
 }
 
@@ -51,28 +50,32 @@
 
     @include respond(phone-tab) {
       top: 0;
-      left: 2rem;
+      left: 20px;
     }
   }
 
   &--basket {
     @include respond(laptop) {
-      top: 50rem;
+      top: 550px;
       left: 0;
     }
 
     @include respond(pixel2XL) {
-      top: 53rem;
+      top: 570px;
     }
 
     @include respond(phone-tab) {
-      top: 50rem;
-      left: 2rem;
+      top: 510px;
+      left: 20px;
     }
 
     @include respond(phone) {
-      top: 53rem;
-      left: 2rem;
+      top: 570px;
+      left: 20px;
+    }
+
+    @include respond(smallPhone) {
+      top: 700px;
     }
   }
 
@@ -83,13 +86,16 @@
     }
 
     @include respond(phone-tab) {
-      top: 50rem;
+      top: 510px;
       left: 50%;
     }
 
     @include respond(phone) {
-      top: 53rem;
-      // left: 2rem;
+      top: 570px;
+    }
+
+    @include respond(smallPhone) {
+      top: 370px;
     }
   }
 
@@ -107,43 +113,50 @@
 
   &--motori {
     @include respond(laptop) {
-      top: 50rem;
+      top: 550px;
       left: 33%;
     }
 
     @include respond(pixel2XL) {
-      top: 53rem;
+      top: 570px;
     }
 
     @include respond(phone-tab) {
-      top: 78rem;
-      left: 2rem;
+      top: 780px;
+      left: 20px;
     }
 
     @include respond(phone) {
-      top: 83rem;
-      // left: 2rem;
+      top: 830px;
+    }
+
+    @include respond(smallPhone) {
+      top: 880px;
+      left: 160px;
     }
   }
 
   &--baseball {
     @include respond(laptop) {
-      top: 50rem;
+      top: 550px;
       left: 66%;
     }
 
     @include respond(pixel2XL) {
-      top: 53rem;
+      top: 570px;
     }
 
     @include respond(phone-tab) {
-      top: 78rem;
+      top: 780px;
       left: 50%;
     }
 
     @include respond(phone) {
-      top: 83rem;
-      // left: 2rem;
+      top: 830px;
+    }
+
+    @include respond(smallPhone) {
+      top: 630px;
     }
   }
 }
@@ -151,15 +164,15 @@
 .icon {
   &__sport {
     // background: radial-gradient($color-secondary-light, $color-secondary-dark 75%);
-    padding: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 2rem;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
     width: 70%;
     display: block;
     margin: 0 auto;
-    margin-top: -2rem;
-    box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+    margin-top: -20px;
+    box-shadow: 0 10px 30px rgba($color-black, 0.3);
 
     @include respond(laptop) {
       width: 30%;
@@ -198,14 +211,14 @@
 ul {
   list-style: none;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 20px;
   text-transform: uppercase;
   // background-color: pink;
 
   li {
     text-align: center;
-    font-size: 1.4rem;
-    padding: 1rem 0;
+    font-size: 14px;
+    padding: 10px 0;
   }
 }
 
@@ -227,7 +240,7 @@ ul {
     }
 
     width: 130%;
-    margin-left: -2.5rem;
+    margin-left: -25px;
 
     li:not(:last-child) {
       border-bottom: 1px solid $color-football;
@@ -241,7 +254,7 @@ ul {
     @include respond(phone-tab) {
       width: 80%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(largePhone) {
@@ -249,7 +262,7 @@ ul {
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
 
     @include respond(smallPhone) {
@@ -267,7 +280,7 @@ ul {
     background-clip: text;
     -webkit-text-fill-color: $color-basket;
     width: 100%;
-    margin-left: 0.5rem;
+    margin-left: 5px;
 
     @include respond(laptop) {
       width: 75%;
@@ -277,11 +290,11 @@ ul {
     @include respond(phone-tab) {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
 
     li:not(:last-child) {
@@ -291,7 +304,7 @@ ul {
 
   &--football {
     width: 100%;
-    margin-left: 0rem;
+    margin-left: 0;
 
     @include respond(laptop) {
       width: 75%;
@@ -301,11 +314,11 @@ ul {
     @include respond(phone-tab) {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
   }
 
@@ -328,11 +341,11 @@ ul {
     @include respond(phone-tab) {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
 
     li:not(:last-child) {
@@ -355,11 +368,11 @@ ul {
     @include respond(phone-tab) {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
 
     li:not(:last-child) {
@@ -386,11 +399,11 @@ ul {
     @include respond(phone-tab) {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 90%;
     }
 
     li:not(:last-child) {
@@ -425,219 +438,12 @@ ul {
       $color-secondary-light,
       $color-secondary-dark 75%
     );
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: 10px;
+    border-radius: 20px;
     width: 70%;
-    margin-left: 3rem;
-    margin-top: 33.3rem;
+    margin-left: 30px;
+    margin-top: 333px;
     opacity: 0;
     visibility: hidden;
-    // height: 5.5rem;
   }
 }
-
-// .slider {
-//     width: 100%;
-//     height: 70vh;
-//     display: flex;
-//     overflow-x: auto;
-//     scroll-snap-type: x mandatory;
-//     scroll-behavior: smooth;
-//     position: relative;
-//     transition: all 1s;
-//   }
-
-// .slide {
-//     flex-shrink: 0;
-//     height: 100%;
-//     width: 100%;
-//     font-size: 5rem;
-//     text-align: center;
-//     transition: all 1s;
-//     color: white;
-
-//     &-1 {
-//         background-image: linear-gradient($color-background, $color-football 80%);
-//     }
-
-//     &-2 {
-//         background-image: linear-gradient($color-background, $color-basket 80%);
-//     }
-
-//     &-3 {
-//         background-image: linear-gradient($color-background, $color-football 80%);
-//     }
-
-//     &-4 {
-//         background-image: linear-gradient($color-background, $color-tennis 80%);
-//     }
-
-//     &-5 {
-//         background-image: linear-gradient($color-background, $color-motor 80%);
-//     }
-
-//     &-6 {
-//         background-image: linear-gradient($color-background, $color-baseball 80%);
-//     }
-// }
-
-// .slider > div {
-//     scroll-snap-align: start;
-// }
-
-// .sport {
-//     &__header {
-//         font-size: 4rem;
-//         text-transform: uppercase;
-//         margin-bottom: -5rem;
-
-//         &--calcio,
-//         &--football {
-//             color: $color-football;
-//         }
-
-//         &--basket {
-//             color: $color-basket;
-//         }
-
-//         &--tennis {
-//             color: $color-tennis;
-//         }
-
-//         &--motori {
-//             color: $color-motor;
-//         }
-
-//         &--baseball {
-//             color: $color-baseball;
-//         }
-//     }
-// }
-
-// .event__container {
-//     text-transform: uppercase;
-//     padding: 2rem;
-//     // background-color: pink;
-//     width: 100%;
-//     height: 40rem;
-//     position: relative;
-//     font-weight: 400;
-//     margin-left: 2rem;
-//     // padding-left: 3rem;
-// }
-
-// .lg {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     font-size: 1.6rem;
-
-//     &--imp {
-//         font-size: 2rem;
-//     }
-
-//     &--1 {
-//         top: 17rem;
-//         left: 17rem;
-//     }
-
-//     &--2 {
-//         top: 30.5rem;
-//         left: 35rem;
-//     }
-
-//     &--3 {
-//         top: 10rem;
-//         left: 10rem;
-//     }
-
-//     &--4 {
-//         top: 31rem;
-//         left: 13rem;
-//     }
-
-//     &--5 {
-//         top: 35rem;
-//         left: 2rem;
-//     }
-
-//     &--6 {
-//         top: 5rem;
-//         left: 20rem;
-//     }
-
-//     &--7 {
-//         top: 18rem;
-//         left: 30rem;
-//     }
-
-//     &--8 {
-//         top: 12rem;
-//         left: 35rem;
-//     }
-
-//     &--9 {
-//         top: 30rem;
-//         left: 0;
-//     }
-
-//     &--10 {
-//         top: 0rem;
-//         left: 35rem;
-//     }
-
-//     &--11 {
-//         top: 27rem;
-//         left: 30rem;
-//     }
-
-//     &--12 {
-//         top: 5rem;
-//         left: 35rem;
-//     }
-
-//     &--13 {
-//         top: 22rem;
-//         left: 20rem;
-//     }
-
-//     &--14 {
-//         top: 20rem;
-//         left: 0;
-//     }
-
-//     &--15 {
-//         top: 26rem;
-//         left: 4rem;
-//     }
-
-//     &--16 {
-//         top: 7rem;
-//         left: 3rem;
-//     }
-
-//     &--17 {
-//         top: 35rem;
-//         left: 45rem;
-//     }
-
-//     &--18 {
-//         top: 15rem;
-//         left: 0;
-//     }
-
-//     &--19 {
-//         top:22rem;
-//         left: 30rem;
-//     }
-
-//     &--20 {
-//         top: 1rem;
-//         left: 15rem;
-//     }
-
-//     &--21 {
-//         top: 0;
-//         left: 0;
-//     }
-// }

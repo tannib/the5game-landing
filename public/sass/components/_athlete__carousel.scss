@@ -7,8 +7,8 @@
   width: 340px;
 
   @include respond(phone) {
-    height: 140px;
-    width: 140px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -31,13 +31,14 @@
   }
 
   @include respond(phone) {
-    transform: scale(0.5);
+    transform: scale(0.75);
   }
 
   @include respond(mediumPhone) {
   }
 
   @include respond(smallPhone) {
+    transform: scale(0.65);
   }
 }
 

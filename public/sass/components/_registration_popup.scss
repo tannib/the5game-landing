@@ -1,326 +1,373 @@
 .popup__1 {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.8);
+  }
+
+  &__blankspace {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
+    height: 100vh;
+    width: 100vw;
+  }
 
-    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background-color: rgba($color-black, .8);
+  &__registration {
+    width: 90%;
+    max-width: 432px;
+    min-width: 201px;
+    // height: 960px;
+    background-image: linear-gradient(
+      $color-secondary-dark,
+      $color-secondary-light
+    );
+    position: fixed;
+    z-index: 3000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    // opacity: 0;
+    // visibility: hidden;
+    border-radius: 20px;
+
+    @include respond(laptop) {
+      min-width: 432px;
     }
 
-    &__blankspace {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
+    @include respond(tablet) {
+      min-width: 423px;
     }
 
-    &__registration {
-        width: 43.2rem;
-        max-width: 432px;
-        height: 70rem;
-        background-image: linear-gradient($color-secondary-dark, $color-secondary-light);
-        position: fixed;
-        z-index: 3000;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: all .3s;
-        // opacity: 0;
-        // visibility: hidden;
-        border-radius: 2rem;
-
-        @include respond(laptop) {
-            min-width: 432px;
-        }
-
-        @include respond(tablet) {
-            min-width: 423px;
-        }
-
-        @include respond(phone) {
-            min-width: 201px;
-        }
+    @include respond(phone) {
+      min-width: 201px;
     }
+  }
 }
 
 .registration {
+  &__icon {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    cursor: pointer;
+
+    &,
+    &::before,
+    &::after {
+      width: 40px;
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+
+      @include respond(phone) {
+        width: 25px;
+        top: 30px;
+        right: 20px;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    & {
+      background-color: transparent;
+    }
+
+    &::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+
+  &__form {
+    &__header {
+      color: $color-white;
+      margin-bottom: 15px;
+      text-align: center;
+
+      &--main {
+        font-size: 35px;
+        font-weight: 400;
+        margin-bottom: 5px;
+
+        @include respond(phone) {
+          font-size: 25px;
+        }
+      }
+
+      &--sub {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 40px;
+
+        @include respond(phone) {
+          font-size: 14px;
+          line-height: 0;
+        }
+
+        &__login--bold {
+          color: $color-primary-dark;
+          font-weight: 500;
+          cursor: pointer;
+          margin-left: 6px;
+        }
+      }
+    }
+
+    &__or__line {
+      display: inline-block;
+      width: 32%;
+      height: 5px;
+      margin-bottom: 10px;
+
+      &--left,
+      &--right {
+        background-color: white;
+        line-height: 1px;
+      }
+
+      &--text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: $color-white;
+        height: auto;
+      }
+
+      &__container {
+        width: 100%;
+      }
+    }
+
+    &__group:not(:last-child) {
+      // margin-bottom: 15px;
+    }
+
+    &__inline {
+      display: inline-block;
+      width: 49%;
+
+      & > input {
+        margin-right: 20px;
+      }
+    }
+
+    &__input {
+      font-size: 15px;
+      padding: 10px 20px;
+      border-radius: 3px;
+      background-color: rgba($color-white, 0.9);
+      border: none;
+      border-bottom: 3px solid transparent;
+      width: 100%;
+      display: block;
+      transition: all 0.3s;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+        font-size: 13px;
+        padding: 7px 10px;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 10px 20px rgba($color-primary, 0.1);
+        border-bottom: 3px solid $color-primary;
+      }
+
+      &:focus:invalid {
+        border-bottom: 3px solid $color-baseball-dark;
+      }
+
+      &::-webkit-input-placeholder {
+        color: $color-motor-light;
+      }
+    }
+
+    &__label {
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 20px;
+      display: block;
+      transition: all 0.3s;
+      color: $color-primary-dark;
+
+      @include respond(phone) {
+        font-size: 11px;
+      }
+    }
+
+    &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-40px);
+    }
+
+    &__radio-input {
+      display: none;
+    }
+
+    &__radio-label {
+      font-size: 15px;
+      cursor: pointer;
+      position: relative;
+      padding-left: 45px;
+      color: $color-white;
+
+      @include respond(phone) {
+        font-size: 11px;
+        padding-left: 35px;
+      }
+    }
+
+    &__radio-button {
+      height: 30px;
+      width: 30px;
+      border: 4px solid $color-primary-dark;
+      border-radius: 10px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 4px;
+
+      @include respond(phone) {
+        top: -4px;
+        height: 25px;
+        width: 25px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 14px;
+        width: 14px;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-primary-dark;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      &--bold {
+        color: $color-primary-dark;
+        font-weight: 700;
+        cursor: pointer;
+        margin-left: 1px;
+      }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
+    }
+
+    &__submit {
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      background: $color-primary-dark;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-top: 30px;
+
+      @include respond(phone) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__fieldset {
+    border: none;
+    padding: 30px;
+
+    @include respond(phone) {
+      padding: 30px 15px 15px 15px;
+    }
+  }
+
+  &__social {
+    margin-bottom: 15px;
+    width: 46%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(phone) {
+      font-size: 14px;
+    }
+
+    &__text {
+      line-height: 10px;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
 
     &__icon {
-        position: absolute;
-        top: 5rem;
-        right: 4rem;
-        cursor: pointer;
-
-        &,
-        &::before,
-        &::after {
-            width: 4rem;
-            height: 2px;
-            background-color: $color-white;
-            display: inline-block;
-        }
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            transition: all .2s;
-        }
-
-        & {
-            background-color: transparent;
-        }
-
-        &::before {
-            top: 0;
-            transform: rotate(135deg);
-        }
-    
-        &::after {
-            top: 0;
-            transform: rotate(-135deg);
-        }
+      align-items: center;
+      justify-content: center;
     }
 
-    &__form {
-        &__header {
-            color: $color-white;
-            margin-bottom: 1.5rem;
-            text-align: center;
-    
-            &--main {
-                font-size: 3.5rem;
-                font-weight: 400;
-                margin-bottom: -.5rem;
-            }
-    
-            &--sub {
-                font-size: 1.6rem;
-                font-weight: 300;
-    
-                &__login--bold {
-                    color: $color-primary-dark;
-                    font-weight: 500;
-                    cursor: pointer;
-                    margin-left: .6rem;
-                }
-            }
-        }
+    &__icon > img {
+      height: 18px;
+      margin: 0 15px -3px 0;
 
-        &__or__line {
-            display: inline-block;
-            width: 32%;
-            height: .5rem;
-            margin-bottom: 1rem;
-
-            &--left,
-            &--right {
-                background-color: white;
-                line-height: 1px;
-            }
-
-            &--text {
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                color: $color-white;
-                height: auto;
-            }
-
-            &__container {
-                width: 100%;
-            }
-        }
-
-        &__group:not(:last-child) {
-            margin-bottom: 1.5rem;
-        }
-
-        &__inline {
-            display: inline-block;
-            width: 49%;
-
-            & > input {
-                margin-right: 2rem;
-            }
-        }
-    
-        &__input {
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            border-radius: 3px;
-            background-color: rgba($color-white, .9);
-            border: none;
-            border-bottom: 3px solid transparent;
-            width: 100%;
-            display: block;
-            transition: all .3s;
-    
-            @include respond(tab-port) {
-                width: 100%;
-            }
-    
-            &:focus {
-                outline: none;
-                box-shadow: 0 1rem 2rem rgba($color-primary, .1);
-                border-bottom: 3px solid $color-primary;
-            }
-    
-            &:focus:invalid {
-                border-bottom: 3px solid $color-baseball-dark;
-            }
-    
-            &::-webkit-input-placeholder {
-                color: $color-motor-light;
-            }
-        }
-
-        &__label {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-left: 2rem;
-            display: block;
-            transition: all .3s;
-            color: $color-primary-dark;
-        }
-
-        &__input:placeholder-shown + &__label {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-4rem);
-        }
-
-        // &__radio-group {
-        //     width: 60%;
-        //     display: inline-block;
-        // }
-    
-        &__radio-input {
-            display: none;
-        }
-        
-        &__radio-label {
-            font-size: 1.5rem;
-            cursor: pointer;
-            position: relative;
-            padding-left: 4.5rem;
-            color: $color-white;
-        }
-    
-        &__radio-button {
-            height: 3rem;
-            width: 3rem;
-            border: 4px solid $color-primary-dark;
-            border-radius: 1rem;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: -.4rem;
-    
-            &::after {
-                content: "";
-                display: block;
-                height: 1.4rem;
-                width: 1.4rem;
-                border-radius: 5px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: $color-primary-dark;
-                opacity: 0;
-                transition: opacity .2s;
-            }
-
-            &--bold {
-                color: $color-primary-dark;
-                font-weight: 700;
-                cursor: pointer;
-                margin-left: .1rem;
-            }
-        }
-    
-        &__radio-input:checked ~ &__radio-label &__radio-button::after {
-            opacity: 1;
-        }
-
-        &__submit {
-            color: rgb(255, 255, 255);
-            display: inline-block;
-            font-weight: bold;
-            font-size: 2rem;
-            cursor: pointer;
-            text-align: center;
-            width: 100%;
-            background: $color-primary-dark;
-            border: none;
-            border-radius: 1rem;
-            padding: 1rem 1.2rem;
-            margin-top: 3rem;
-        }
+      @include respond(phone) {
+        height: 15px;
+      }
     }
 
-    &__fieldset {
-        border: none;
-        padding: 3rem;
+    &--fb {
+      margin-right: 17px;
+      background-color: #3b5998;
+      color: $color-white;
     }
 
-    &__social {
-        margin-bottom: 1.5rem;
-        width: 47%;
-        height: 4rem;
-        padding: .5rem;
-        border-radius: 1rem;
-        cursor: pointer;
-        border: none;
-        font-size: 1.7rem;
-        font-weight: 500;
-        align-items: center;
-        justify-content: center;
-
-        &__text {
-            line-height: 1rem;
-            display: inline-block;
-            margin-bottom: 3px;
-        }
-
-        &__icon {
-            align-items: center;
-            justify-content: center;
-        }
-
-        &__icon > img {
-            height: 18px;
-            margin: 0 1.5rem -.3rem 0;
-
-            @include respond(phone) {
-                height: 10px;
-            }
-        }
-
-        &--fb {
-            margin-right: 1.7rem;
-            background-color: #3b5998;
-            color: $color-white;
-        }
-
-        &--google {
-            color: #353d56;
-        }
-
-        &__header {
-            color: $color-white;
-            font-weight: 300;
-        }
+    &--google {
+      color: #353d56;
     }
+
+    &__header {
+      color: $color-white;
+      font-weight: 300;
+    }
+  }
 }

@@ -1,138 +1,166 @@
 .section-faq {
-    background: linear-gradient(to right, $color-header-1, $color-primary-darker);
-    padding: 10rem;
-    padding-top: 15rem;
-    clip-path: polygon(50% 7%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
-    margin-top: -15rem;
-    color: $color-white;
+  background: linear-gradient(to right, $color-header-1, $color-primary-darker);
+  padding: 100px;
+  padding-top: 150px;
+  clip-path: polygon(50% 7%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  margin-top: -150px;
+  color: $color-white;
 
-    @include respond(laptop) {  
-        clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
-        text-align: center;  
-        padding-bottom: 5rem;
-        padding-top: 10rem;  
+  @include respond(laptop) {
+    clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+
+  @include respond(phone-tab) {
+    clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+    padding: 50px;
+    padding-top: 100px;
+  }
+
+  @include respond(largePhone) {
+    clip-path: polygon(50% 1%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+    padding: 50px;
+    padding-top: 80px;
+  }
+
+  @include respond(phone) {
+    height: 2400px;
+    padding-top: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @include respond(mediumPhone) {
+    // height: 2600px;
+  }
+
+  @include respond(smallPhone) {
+    clip-path: polygon(50% 1%, 100% 0, 100% 99%, 50% 100%, 0 99%, 0 0);
+    height: 2600px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include respond(laptop) {
+      width: 90%;
     }
 
-    @include respond(phone-tab) {  
-        clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
-        padding: 5rem;
-        padding-top: 10rem;  
+    @include respond(pixel2XL) {
+      width: 100%;
     }
 
-    @include respond(largePhone) {  
-        clip-path: polygon(50% 1%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);  
-        padding: 5rem;
-        padding-top: 8rem;  
-    }
-
-    @include respond(smallPhone) {  
-        clip-path: polygon(50% 2%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);     
-    }
-
-    &__heading {
-        width: 60%;
-        margin: 0 auto;
-
-        @include respond(laptop) {  
-            width: 90%;
-        }
-
-        @include respond(pixel2XL) {  
-            width: 100%;
-        }
-
-        // @include respond(phone-tab) {  
-        //     width: 100%;
-        // }
-    }
+    // @include respond(phone-tab) {
+    //     width: 100%;
+    // }
+  }
 }
 
 .row__1 {
-    margin-bottom: 1rem !important;
+  margin-bottom: 10px !important;
 }
 
 .row__faq {
-    &--first {
-        @include respond(laptop) {
-            margin-left: -4rem;
-            width: 110%;
-            margin-top: -4rem;
-        }
-
-        @include respond(pixel2XL) {
-            margin-left: 0rem;
-            width: 100%;
-        }
+  &--first {
+    @include respond(laptop) {
+      margin-left: -40px;
+      width: 110%;
+      margin-top: -40px;
     }
 
-    &--second {
-        @include respond(laptop) {
-            margin-top: 2rem;
-        }
-
-        @include respond(pixel2XL) {  
-            margin-top: -4rem;
-        }
+    @include respond(pixel2XL) {
+      margin-left: 00px;
+      width: 100%;
     }
+  }
+
+  &--second {
+    @include respond(laptop) {
+      margin-top: 20px;
+    }
+
+    @include respond(pixel2XL) {
+      margin-top: -40px;
+    }
+  }
 }
 
 .qanda {
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black, .5);
-    background-color: rgba($color-white, .9);
-    border-radius: 3px;
-    padding: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px rgba($color-black, 0.5);
+  background-color: rgba($color-white, 0.9);
+  border-radius: 3px;
+  padding: 30px;
 
-    &--of-3 {
-        width: 85%;
+  &--of-3 {
+    width: 85%;
 
-        @include respond(laptop) {
-            width: 100%;
-        }
+    @include respond(laptop) {
+      width: 100%;
     }
+  }
 
-    @include respond(pixel2XL) {  
-        width: 75%;
-        margin-bottom: 3rem;
-    }
+  @include respond(pixel2XL) {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+
+  @include respond(phone) {
+    padding: 30px;
+  }
+
+  @include respond(smallPhone) {
+    width: 100%;
+  }
 }
 
 .question {
-    backface-visibility: hidden;
-    display: block;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    color: $color-primary-darker;
+  backface-visibility: hidden;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $color-primary-darker;
 }
 
 .answer {
-    color: $color-primary-dark;
+  color: $color-primary-dark;
 }
 
 .more__questions {
-    width: 75%;
-    margin: 0 auto;
-    text-align: justify;
-    font-size: 1.9rem;
-    font-weight: 300;
-    padding-bottom: 5rem;
+  width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.9rem;
+  font-weight: 300;
+  padding-bottom: 50px;
 
-    @include respond(pixel2XL) {  
-        width: 90%;
-        margin-top: -6rem;
-        font-size: 1.6rem;
-        // margin-bottom: 3rem;
-    }
+  @include respond(pixel2XL) {
+    width: 80%;
+    margin-top: -60px;
+    font-size: 1.6rem;
+    // margin-bottom: 30px;
+  }
 
-    @include respond(phone) {
-        margin-top: -3rem;
-        // left: 2rem;
-    }
+  @include respond(phone) {
+    margin-top: -30px;
+    font-size: 16px;
+    width: 95%;
+  }
 }
 
 .faq__bold {
-    font-weight: 600;
-    font-size: 2rem;
-    cursor: pointer;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+
+  @include respond(phone) {
+    font-size: 20px;
+  }
 }

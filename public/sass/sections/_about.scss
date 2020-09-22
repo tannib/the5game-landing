@@ -1,133 +1,165 @@
 .section-about {
   background-color: $color-background;
-  height: 110rem;
-  padding-top: 20rem;
-  margin-top: -10rem;
+  height: 1000px;
+  padding-top: 200px;
+  margin-top: -130px;
 
   @include respond(laptop) {
   }
 
   @include respond(pixel2XL) {
-    height: 105rem;
-    margin-top: -10rem;
+    padding-top: 150px;
+    margin-top: -100px;
   }
 
   @include respond(phone-tab) {
-    margin-top: -15rem;
-    height: 140rem;
+    padding-top: 200px;
+    height: 1500px;
   }
 
   @include respond(largePhone) {
-    margin-top: -18rem;
+    margin-top: -130px;
   }
 
   @include respond(phone) {
-    height: 145rem;
+    height: 1370px;
   }
 
-  @include respond(mediumPhone) {
-    // padding-bottom: 20rem;
+  @include respond(smallPhone) {
+    height: 1250px;
   }
-
-  // @include respond(smallPhone) {
-  //     padding-bottom: 20rem;
-  // }
 }
 
-.row-about {
-  display: flex;
-  align-items: center;
+.about-container {
+  // height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 30px;
+
+  @include respond(pixel2XL) {
+    grid-template-columns: 1fr 1.5fr;
+  }
 
   @include respond(phone-tab) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  @include respond(smallPhone) {
+    padding: 0 20px;
   }
 }
 
 .about__left {
-  height: 550px;
-  padding: 0 5rem;
+  // height: 550px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   @include respond(laptop) {
-    padding-top: 1rem;
-    padding-left: 6rem;
+    padding-top: 10px;
+    padding-left: 60px;
+  }
+
+  @include respond(pixel2XL) {
+    padding: 0;
   }
 
   @include respond(phone-tab) {
-    padding: 3rem;
+    // padding: 30px;
     justify-content: center;
-    height: 500px;
+    // height: 500px;
   }
 
   @include respond(phone) {
-    height: 280px;
+    // height: 280px;
   }
 }
 
 .about__right {
-  height: 480px;
-  background: linear-gradient($color-secondary-light, $color-secondary-dark);
-  padding: 5rem;
-  color: white;
-  width: 90%;
-  border-radius: 5px;
-  box-shadow: 0 1.5rem 3rem rgba($color-black, 0.15);
-
   @include respond(laptop) {
-    height: auto;
   }
 
   @include respond(pixel2XL) {
-    padding: 3rem 4rem;
+    padding: 30px 10px;
   }
 
   @include respond(phone-tab) {
-    margin: 0 auto;
-    margin-top: 5rem;
     width: 70%;
+    margin: 0 auto;
   }
 
   @include respond(largePhone) {
-    width: 80%;
-    // margin-bottom: 5rem;
+    width: 100%;
   }
 
   @include respond(phone) {
-    width: 65%;
-    margin-bottom: 5rem;
+    width: 100%;
+    margin-top: 10px;
   }
 
   @include respond(smallPhone) {
-    width: 80%;
+    width: 100%;
+  }
+
+  &__container {
+    height: 550px;
+    background: linear-gradient(#7ed56f, #28b485);
+    padding: 50px;
+    color: white;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+
+    @include respond(pixel2XL) {
+      width: 100%;
+    }
+
+    @include respond(mediumPhone) {
+      padding: 30px;
+    }
+    @include respond(smallPhone) {
+      padding: 15px;
+    }
   }
 
   &__text {
     &--main {
-      font-size: 3rem;
+      font-size: 30px;
+      line-height: 35px;
       font-weight: 500;
-      margin-bottom: 1.8rem;
+      margin-bottom: 18px;
       display: block;
+
+      @include respond(smallPhone) {
+        font-size: 27px;
+        line-height: 30px;
+      }
     }
 
     &--sub {
-      font-size: 2.2rem;
+      font-size: 22px;
       font-weight: 300;
       display: block;
 
       &:not(:last-child) {
-        margin-bottom: 2.5rem;
+        margin-bottom: 25px;
+      }
+
+      @include respond(smallPhone) {
+        font-size: 20px;
       }
     }
 
     &--line {
       display: block;
-      width: 6rem;
-      height: 0.3rem;
+      width: 60px;
+      height: 3px;
       background: $color-white;
-      margin-bottom: 2.5rem;
+      margin-bottom: 25px;
 
       @include respond(laptop) {
         width: 10rem;

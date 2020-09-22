@@ -1,87 +1,81 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 28px;
   color: $color-grey-dark-1;
 }
 
 .heading-primary {
   color: $color-white;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   backface-visibility: hidden;
   display: block;
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 5rem;
-
-  @include respond(big-laptop) {
-    font-size: 3.25rem;
-  }
+  line-height: 50px;
 
   @include respond(laptop) {
-    margin-bottom: 1rem;
-    font-size: 3.3rem;
-    line-height: 4.3rem;
+    margin-bottom: 10px;
+    font-size: 33px;
+    line-height: 43px;
   }
 
   @include respond(pixel2XL) {
-    font-size: 3.5rem;
-    // margin-bottom: 2rem;
+    font-size: 30px;
   }
 
   @include respond(phone-tab) {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     backface-visibility: hidden;
     display: block;
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 50px;
   }
 
-  // @media only screen and (max-width: 86em) {
-  //     font-size: 3.9rem;
-  // }
+  @include respond(largePhone) {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 40px;
+  }
 
-  // @media only screen and (max-width: 84em) {
-  //     font-size: 3.8rem;
-  // }
+  @include respond(phone) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  @include respond(smallPhone) {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .heading-secondary {
   color: $color-white;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
   backface-visibility: hidden;
   display: block;
-  font-size: 2.1rem;
+  font-size: 21px;
+  line-height: 25px;
   font-weight: 300;
 
   @include respond(big-laptop) {
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   @include respond(laptop) {
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-size: 17px;
   }
 
   @include respond(pixel2XL) {
-    // margin-bottom: 1rem;
-    // font-size: 1.7rem;
   }
 
   @include respond(phone-tab) {
-    // color: $color-white;
-    // margin-bottom: 3rem;
-    // backface-visibility: hidden;
-    // display: block;
-    // font-size: 2.1rem;
-    // font-weight: 300;
   }
 }
 
 .heading-tertiary {
-  margin-bottom: 5rem;
   backface-visibility: hidden;
   display: block;
   animation: MoveInRight 1s ease-out;
@@ -93,36 +87,45 @@ body {
   &--sub {
     color: $color-secondary-light;
     display: block;
-    font-size: 4.5rem;
+    font-size: 45px;
     font-weight: 500;
 
     @include respond(pixel2XL) {
-      font-size: 4rem;
+      font-size: 40px;
+    }
+
+    @include respond(smallPhone) {
+      font-size: 35px;
+      line-height: 0;
     }
   }
 
   &--main {
     color: $color-secondary-dark;
     display: block;
-    line-height: 2.5rem;
-    font-size: 6rem;
+    line-height: 95px;
+    font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 5rem;
 
     @include respond(pixel2XL) {
-      font-size: 5rem;
+      font-size: 50px;
     }
 
     @include respond(phone-tab) {
-      margin-bottom: 4rem;
+      margin-bottom: 40px;
+    }
+
+    @include respond(smallPhone) {
+      font-size: 40px;
+      margin-bottom: 0;
     }
   }
 
   &--line {
     display: block;
-    width: 10rem;
-    height: 0.5rem;
+    width: 100px;
+    height: 5px;
     background: $color-secondary-dark;
 
     @include respond(phone-tab) {
@@ -133,13 +136,12 @@ body {
 }
 
 .heading-fourth {
-  margin-bottom: -1rem;
   backface-visibility: hidden;
   display: block;
   animation: MoveInRight 1s ease-out;
   color: $color-white;
   display: block;
-  font-size: 4.5rem;
+  font-size: 45px;
   font-weight: 500;
   text-align: center;
   color: $color-background;
@@ -147,7 +149,7 @@ body {
   &--sub {
     // color: $color-background;
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 35px;
     font-weight: 500;
     text-align: left;
 
@@ -160,33 +162,34 @@ body {
   &--main {
     // color: $color-white;
     display: inline-block;
-    line-height: 2.5rem;
-    font-size: 5rem;
+    line-height: 25px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 
     @include respond(phone-tab) {
       display: block;
       text-align: center;
+      line-height: 50px;
     }
 
     @include respond(largePhone) {
-      line-height: 4.5rem;
+      line-height: 45px;
     }
   }
 
   &--qmark {
     display: inline-block;
-    line-height: 2.5rem;
-    font-size: 5rem;
+    line-height: 25px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 
     @include respond(phone-tab) {
-      margin-left: -0.5rem;
-      font-size: 5rem;
+      margin-left: -5px;
+      font-size: 50px;
       font-weight: 600;
     }
   }
@@ -196,18 +199,22 @@ body {
   backface-visibility: hidden;
   display: block;
   color: $color-white;
-  font-size: 4.5rem;
+  font-size: 45px;
   font-weight: 500;
   text-align: center;
 
   @include respond(phone-tab) {
-    margin-bottom: -1rem;
+    margin-bottom: -10px;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 50px;
   }
 
   &--sub {
     color: $color-secondary-light;
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 35px;
     font-weight: 500;
     text-align: left;
 
@@ -220,72 +227,67 @@ body {
   &--main {
     color: $color-secondary-dark;
     display: inline-block;
-    line-height: 2.5rem;
-    font-size: 5rem;
+    line-height: 25px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 
     @include respond(phone-tab) {
       display: block;
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 10px;
     }
   }
 }
 
 .heading-sixth {
-  margin-bottom: 5rem;
+  margin-bottom: 60px;
   backface-visibility: hidden;
   display: block;
   animation: MoveInRight 1s ease-out;
   color: $color-background;
-  // padding-left: 26rem;
+
+  @include respond(phone-tab) {
+    margin: 60px;
+  }
 
   &--sub {
     display: block;
-    font-size: 4.5rem;
+    font-size: 45px;
     font-weight: 600;
-    margin-bottom: -4rem;
+    line-height: 55px;
     text-transform: uppercase;
 
     @include respond(phone-tab) {
-      font-size: 3.9rem;
-      margin-bottom: -3rem;
+      font-size: 39px;
       text-align: center;
     }
   }
 
   &--main {
-    background: -webkit-linear-gradient(
-      $color-secondary-light,
-      $color-secondary-dark
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: block;
-    font-size: 6rem;
+    font-size: 60px;
     font-weight: 700;
+    color: #7ed56f;
 
     @include respond(pixel2XL) {
-      font-size: 5rem;
+      font-size: 50px;
     }
 
     @include respond(phone-tab) {
-      font-size: 4.7rem;
+      font-size: 47px;
     }
 
     @include respond(smallPhone) {
-      font-size: 4.2rem;
+      font-size: 42px;
       letter-spacing: -1px;
     }
   }
 
   &--line {
     display: block;
-    width: 10rem;
-    height: 0.5rem;
+    width: 100px;
+    height: 5px;
     background: $color-secondary-dark;
 
     @include respond(phone-tab) {

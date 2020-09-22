@@ -1,54 +1,60 @@
 .section-how {
   background: linear-gradient(to right, $color-header-1, $color-primary-darker);
-  padding: 20rem 10rem;
+  padding: 150px 100px;
   clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-  margin-top: -20rem;
+  margin-top: -200px;
   color: $color-white;
 
   @include respond(laptop) {
-    padding: 15rem 10rem;
+    padding: 150px 100px;
   }
 
   @include respond(pixel2XL) {
-    padding: 12rem 10rem;
+    padding: 120px 100px;
     clip-path: polygon(50% 5%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
   }
 
   @include respond(phone-tab) {
     clip-path: polygon(50% 2%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
     margin-top: -20%;
-    height: 165rem;
-    padding: 12rem 4rem;
+    height: 1650px;
+    padding: 150px 120px;
   }
 
   @include respond(largePhone) {
-    clip-path: polygon(50% 2%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
-    padding: 12rem 5rem;
-    height: 165rem;
+    padding: 150px 60px;
   }
 
   @include respond(phone) {
-    height: 205rem;
+    padding: 150px 30px;
+  }
+
+  @include respond(mediumPhone) {
+    padding: 150px 30px;
   }
 
   @include respond(smallPhone) {
-    padding-top: 17rem;
+    height: 1450px;
+    padding: 110px 30px;
+    clip-path: polygon(50% 2%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
   }
 
   &__container {
-    height: 40rem;
+    height: 400px;
     width: 100%;
-    position: relative;
-    filter: drop-shadow(0 1.5rem 5rem rgba($color-black, 1));
+    margin-top: 50px;
+    filter: drop-shadow(0 15px 50px rgba($color-black, 1));
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     @include respond(laptop) {
-      width: 115%;
-      margin-left: -7rem;
-      margin-top: -2rem;
+      // width: 115%;
+      // margin-left: -70px;
+      // margin-top: -20px;
     }
 
     @include respond(pixel2XL) {
-      margin-left: -5rem;
+      // margin-left: -50px;
     }
 
     @include respond(phone-tab) {
@@ -56,171 +62,171 @@
       flex-direction: column;
       align-items: center;
       height: 1200px;
+      margin-top: 60px;
     }
 
     @include respond(largePhone) {
-      margin-left: -3rem;
+      // margin-left: -30px;
     }
 
     @include respond(phone) {
-      margin-left: -6rem;
+      // margin-left: -60px;
     }
 
     @include respond(smallPhone) {
-      margin-left: -4rem;
+      // margin-left: -40px;
     }
   }
 
   &__chevron {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
+    width: 100%;
+    // height: 100%;
     display: inline-block;
     transition: all 0.2s;
 
     @include respond(largePhone) {
       display: block;
       position: relative;
-      margin-bottom: -4rem;
+      margin-bottom: -40px;
     }
 
     &--1 {
-      left: 0;
       background-color: rgba($color-background, 0.9);
       clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
-      width: 25.5%;
-      border-radius: 2rem 0 0 2rem;
+      border-radius: 20px 0 0 20px;
 
       @include respond(laptop) {
-        width: 24.5%;
+        // width: 24.5%;
       }
 
       @include respond(phone-tab) {
         display: block;
         position: relative;
-        height: 65rem;
-        width: 70%;
+        height: 650px;
         margin: 0 auto;
         clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0% 80%);
-        border-radius: 2rem;
+        border-radius: 20px;
       }
 
       @include respond(largePhone) {
-        width: 90%;
       }
 
       @include respond(phone) {
-        width: 65%;
-        height: 40rem;
+        height: 300px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0% 85%);
       }
 
       @include respond(smallPhone) {
-        height: 30rem;
-        clip-path: polygon(0% 0%, 100% 0, 100% 82%, 50% 100%, 0% 82%);
+        height: 250px;
+        // clip-path: polygon(0% 0%, 100% 0, 100% 82%, 50% 100%, 0% 82%);
       }
     }
 
     &--2 {
-      left: 24%;
       background-color: rgba($color-background, 0.93);
       clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-      width: 26.5%;
 
       @include respond(laptop) {
-        width: 27.5%;
-        left: 23%;
+        // width: 27.5%;
+        // left: 23%;
       }
 
       @include respond(phone-tab) {
         clip-path: polygon(50% 15%, 100% 0, 100% 75%, 50% 86%, 0% 75%, 0 0);
-        left: 0;
-        width: 70%;
+        // left: 0;
+        // width: 70%;
         margin: 0 auto;
         position: relative;
-        height: 95rem;
-        margin-top: -4rem;
+        height: 950px;
+        margin-top: -40px;
       }
 
       @include respond(largePhone) {
-        width: 90%;
       }
 
       @include respond(phone) {
-        width: 65%;
-        height: 50rem;
-        margin-top: -6rem;
+        height: 500px;
+        margin-top: -30px;
+        clip-path: polygon(50% 9%, 100% 0, 100% 75%, 50% 86%, 0% 75%, 0 0);
       }
 
       @include respond(smallPhone) {
-        margin-top: -3.5rem;
+        height: 350px;
         clip-path: polygon(50% 11%, 100% 0, 100% 75%, 50% 86%, 0% 75%, 0 0);
       }
     }
 
     &--3 {
-      left: 49%;
       background-color: rgba($color-background, 0.96);
       clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-      width: 26.5%;
 
       @include respond(laptop) {
-        width: 27.5%;
-        left: 49%;
+        // width: 27.5%;
+        // left: 49%;
       }
 
       @include respond(phone-tab) {
         clip-path: polygon(50% 11%, 100% 0, 100% 75%, 50% 88%, 0% 75%, 0 0);
-        left: 0;
-        width: 70%;
+        // left: 0;
+        // width: 70%;
         margin: 0 auto;
         position: relative;
-        height: 95rem;
-        margin-top: -8rem;
+        height: 950px;
+        margin-top: -80px;
       }
 
       @include respond(largePhone) {
-        width: 90%;
+        // width: 90%;
       }
 
       @include respond(phone) {
-        width: 65%;
-        height: 50rem;
-        margin-top: -10rem;
+        // width: 65%;
+        height: 500px;
+        margin-top: -100px;
+      }
+
+      @include respond(smallPhone) {
+        margin-top: -80px;
+        height: 350px;
+        clip-path: polygon(50% 11%, 100% 0, 100% 78%, 50% 88%, 0% 78%, 0 0);
       }
     }
 
     &--4 {
-      left: 74%;
       background-color: rgba($color-background, 1);
       clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
-      width: 26%;
-      border-radius: 0 2rem 2rem 0;
+      border-radius: 0 20px 20px 0;
 
       @include respond(laptop) {
-        width: 25%;
-        left: 75%;
+        // width: 25%;
+        // left: 75%;
       }
 
       @include respond(phone-tab) {
         clip-path: polygon(50% 17%, 100% 0, 100% 75%, 100% 100%, 0% 100%, 0 0);
-        border-radius: 0 0 3rem 3rem;
-        left: 0;
-        width: 70%;
+        border-radius: 0 0 30px 30px;
+        // left: 0;
+        // width: 70%;
         margin: 0 auto;
         position: relative;
-        height: 65rem;
-        margin-top: -8rem;
+        height: 650px;
+        margin-top: -80px;
       }
 
       @include respond(largePhone) {
-        width: 90%;
+        // width: 90%;
       }
 
       @include respond(phone) {
-        width: 65%;
-        height: 40rem;
-        margin-top: -10rem;
+        // width: 65%;
+        height: 400px;
+        margin-top: -100px;
+      }
+
+      @include respond(smallPhone) {
+        height: 250px;
+        margin-top: -70px;
+        clip-path: polygon(50% 15%, 100% 0, 100% 75%, 100% 100%, 0% 100%, 0 0);
       }
     }
   }
@@ -228,27 +234,26 @@
 
 .chevron {
   &__header {
-    padding: 1rem 3rem;
-    font-size: 4rem;
+    padding: 10px 30px;
+    font-size: 40px;
     font-weight: 900;
     color: #dcc515;
-    margin-bottom: -2rem;
+    margin-bottom: -20px;
 
     &--sub {
-      font-size: 3rem;
+      font-size: 30px;
       font-weight: 600;
       text-align: center;
       color: #dcc515;
-      margin-bottom: 1.5rem;
+      margin-bottom: 15px;
 
       @include respond(laptop) {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 25px;
+        margin-bottom: 10px;
       }
 
       @include respond(pixel2XL) {
-        font-size: 2rem;
-        // margin-bottom: 1rem;
+        font-size: 20px;
       }
 
       @include respond(phone-tab) {
@@ -263,8 +268,8 @@
       }
 
       @include respond(mediumPhone) {
-        top: 15%;
-        left: 51%;
+        // top: 15%;
+        // left: 51%;
       }
 
       @include respond(smallPhone) {
@@ -274,7 +279,7 @@
 
       &--2,
       &--3 {
-        padding-left: 1rem;
+        padding-left: 10px;
 
         @include respond(phone-tab) {
           position: absolute;
@@ -287,7 +292,6 @@
         }
 
         @include respond(mediumPhone) {
-          left: 50%;
         }
       }
 
@@ -300,12 +304,12 @@
 
         @include respond(phone) {
           left: 45%;
-          top: 33%;
+          // top: 33%;
         }
 
         @include respond(mediumPhone) {
-          left: 46%;
-          top: 33%;
+          // left: 46%;
+          // top: 33%;
         }
       }
     }
@@ -314,17 +318,23 @@
   &__text {
     width: 65%;
     margin: 0 auto;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 400;
     color: $color-primary-dark;
     text-align: center;
 
     @include respond(laptop) {
-      font-size: 1.6rem;
+      font-size: 16px;
     }
 
     @include respond(pixel2XL) {
-      font-size: 1.5rem;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    @include respond(tablet) {
+      font-size: 14px;
+      line-height: 21px;
     }
 
     @include respond(phone-tab) {
@@ -333,6 +343,7 @@
       right: 10%;
       text-align: left;
       width: 50%;
+      font-size: 15px;
     }
 
     @include respond(phone) {
@@ -348,24 +359,28 @@
     @include respond(smallPhone) {
       position: absolute;
       top: 38%;
-      right: 13%;
+      right: 5%;
       text-align: left;
-      width: 55%;
+      width: 65%;
     }
 
     &--bold {
-      font-size: 1.9rem;
+      font-size: 19px;
       font-weight: 700;
       color: $color-primary-darker;
 
       @include respond(laptop) {
-        font-size: 1.7rem;
+        font-size: 17px;
       }
     }
 
     &--2,
     &--3 {
-      padding-left: 1rem;
+      padding-left: 10px;
+
+      @include respond(pixel2XL) {
+        line-height: 22px;
+      }
 
       @include respond(phone-tab) {
         top: 35%;
@@ -378,7 +393,7 @@
       }
 
       @include respond(phone) {
-        top: 50%;
+        top: 40%;
       }
       @include respond(smallPhone) {
         top: 45%;
@@ -390,7 +405,7 @@
     width: 25%;
     display: block;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 40px;
 
     @include respond(laptop) {
       width: 23%;
@@ -411,6 +426,9 @@
     }
 
     &--4 {
+      @include respond(phone) {
+        top: 55%;
+      }
       @include respond(mediumPhone) {
         top: 60%;
       }
