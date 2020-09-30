@@ -26,19 +26,21 @@
   }
 
   @include respond(phone) {
-    height: 2400px;
+    // height: 2200px;
+    clip-path: polygon(50% 1%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
     padding-top: 90px;
     padding-left: 25px;
     padding-right: 25px;
   }
 
   @include respond(mediumPhone) {
-    // height: 2600px;
+    // height: 2500px;
+    clip-path: polygon(50% 1%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%, 0 0);
   }
 
   @include respond(smallPhone) {
     clip-path: polygon(50% 1%, 100% 0, 100% 99%, 50% 100%, 0 99%, 0 0);
-    height: 2700px;
+    // height: 2550px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -145,13 +147,15 @@
     width: 80%;
     margin-top: -60px;
     font-size: 1.6rem;
-    // margin-bottom: 30px;
   }
 
   @include respond(phone) {
     margin-top: -30px;
     font-size: 16px;
     width: 95%;
+  }
+  @include respond(smallPhone) {
+    // display: none;
   }
 }
 

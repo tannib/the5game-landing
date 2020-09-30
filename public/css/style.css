@@ -760,7 +760,7 @@ body {
 .footer {
   padding: 25rem 0;
   background-color: #f2f5ff;
-  margin-top: -10rem; }
+  margin-top: -30rem; }
 
 .athlete__slideshow-container {
   position: relative;
@@ -2067,14 +2067,16 @@ ul {
       padding-top: 80px; } }
   @media (max-width: 26.6em) {
     .section-faq {
-      height: 2400px;
+      clip-path: polygon(50% 1%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
       padding-top: 90px;
       padding-left: 25px;
       padding-right: 25px; } }
+  @media (max-width: 23.5em) {
+    .section-faq {
+      clip-path: polygon(50% 1%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%, 0 0); } }
   @media (max-width: 20em) {
     .section-faq {
       clip-path: polygon(50% 1%, 100% 0, 100% 99%, 50% 100%, 0 99%, 0 0);
-      height: 2700px;
       padding-left: 25px;
       padding-right: 25px; } }
   .section-faq__heading {
